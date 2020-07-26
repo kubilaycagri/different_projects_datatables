@@ -9,7 +9,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Kcy\\DynamicDatatables\\": "src"}
+        "psr-4": { "Kcy\\DynamicDatatables\\": "src\"}
     },
     "require": {}
 }
