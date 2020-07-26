@@ -8,7 +8,7 @@ This package can be installed with composer:
 ```
 composer require kcy/dynamic-datatables
 
-config.app add line ---> Kcy\DynamicDatatables\DatatablesKcyServiceProvider::class,
+app\config.php add line ---> Kcy\DynamicDatatables\DatatablesKcyServiceProvider::class,
 ```
 
 ## Requirements
@@ -29,6 +29,6 @@ $password = 'user_pass';
 
 $pdo = new ConnectionDB($dsn, $user, $password);
 $result = $pdo->sqlExec($sql);
-$server_side_list = new DatatableGenerator();
-return $server_side_list->simpleTableGenerate($table_cols, $result);
+$dt_generator = new DatatableGenerator();
+return $dt_generator->simpleTableGenerate($table_cols, $result);
 ```
