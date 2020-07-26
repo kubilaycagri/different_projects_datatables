@@ -1,0 +1,13 @@
+{
+    "name": "kcy/dynamic-datatables",
+    "description": "A little work to create dynamic tables from different projects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kubilay Cagri Yildirim",
+            "email": "kubilaycagri@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
