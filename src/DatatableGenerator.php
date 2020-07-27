@@ -11,6 +11,6 @@ class DatatableGenerator
 
         $return_data['table_cols'] = $table_cols;
         $return_data['result_set'] = $result_set;
-        return view('datatables::simpleDatatableList', $return_data + [$this]);
+        return view('datatables::simpleDatatableList', $return_data);
     }
 }
