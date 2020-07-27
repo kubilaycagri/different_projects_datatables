@@ -12,25 +12,29 @@
     <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
-                @foreach($table_cols as $col_name)
-                <th>{{$col_name}}</th>
-                @endforeach
+                @if(isset($table_cols))
+                    @foreach($table_cols as $col_name)
+                        <th>{{$col_name}}</th>
+                    @endforeach
+                @endif                    
             </tr>
         </thead>
         <tbody>
             @foreach($result_set as $result)
             <tr>
                 @foreach($table_cols as $col_name)
-                <td>{{$result[$col_name]}}</td>
+                <td>{{isset($result[$col_name])?$result[$col_name]:''}}</td>
                 @endforeach
             </tr>
             @endforeach
         </tbody>
         <tfoot>
             <tr>
-                @foreach($table_cols as $col_name)
-                <th>{{$col_name}}</th>
-                @endforeach
+                if(isset($table_cols))
+                    @foreach($table_cols as $col_name)
+                        <th>{{$col_name}}</th>
+                    @endforeach
+                @endif
             </tr>
         </tfoot>
     </table>
