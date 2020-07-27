@@ -30,7 +30,7 @@
         </tbody>
         <tfoot>
             <tr>
-                if(isset($table_cols))
+                @if(isset($table_cols))
                     @foreach($table_cols as $col_name)
                         <th>{{$col_name}}</th>
                     @endforeach
